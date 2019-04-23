@@ -1,0 +1,30 @@
+.lexColumns {
+    float: left;    
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(126, 126, 126);
+}
+.lexColumnsNull{
+    float: left;
+    height: 100%;
+    width: 20px;
+}
+
+/*
+    lexColumns-#`s width : calc(100/#% - (# - 1) * "margin-width"px);
+*/
+.lexColumns-2{
+    width: calc((100% - 20px)/2);
+}
+.lexColumns-3{
+    width: calc((100% - 40px)/3);
+}
+.lexColumns-4{
+    width: calc((100% - 60px)/4);
+}
+.lexColumns-5{
+    width: calc((100% - 80px)/5);
+}
+.lexColumns-6{
+    width: calc((100% - 100px)/6);
+}
