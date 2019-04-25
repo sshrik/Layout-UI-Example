@@ -24,6 +24,7 @@
     font-size: 2em;
 }
 .lexBody {
+    /* For do not overlap margin size with header and body.*/
     display: inline-block;
     width: calc(100% - 40px);
     height: calc(80% - 40px);
