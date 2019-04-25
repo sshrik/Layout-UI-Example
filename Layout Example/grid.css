@@ -1,0 +1,30 @@
+.lexGrid {
+    display: grid;
+    grid-gap: 20px;
+    
+    /* lexBody`s values. */
+    width: calc(100% - 40px);
+    height: calc(80% - 40px);
+    margin: 20px;
+}
+
+.lexGrid-col2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.lexGrid-col3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.lexGrid-col4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.lexGrid-col5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.lexGrid-col6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.item {
+    border: 1px solid black;
+    background-color: rgb(126, 126, 126);
+}
