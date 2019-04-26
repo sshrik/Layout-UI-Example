@@ -1,0 +1,28 @@
+.lexLandingBody {
+    background-color: rgb(179, 179, 179);
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.lexLandingLeft {
+    float: left;
+}
+
+.lexLandingRight {
+    float: right;
+}
+
+.lexLandingSmall{
+    width: calc(20% - 40px);
+    height: calc(50% - 40px);
+}
+
+.lexLandingMiddle{
+    width: calc(50% - 40px);
+    height: calc(50% - 40px);
+}
+
+.lexLandingLarge{
+    width: 100%;
+    height: calc(50% - 40px);
+}
