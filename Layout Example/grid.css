@@ -1,7 +1,5 @@
-.lexGrid {
-    display: grid;
-    grid-gap: 20px;
-    
+.lexGridBody {
+    /* If grid is used for inner-body, this not be needed. */
     /* lexBody`s values. */
     width: calc(100% - 40px);
     height: calc(80% - 40px);
@@ -9,6 +7,11 @@
 
     /* For do not overlap margin size with header and body.*/
     margin-top: 40px;
+}
+
+.lexGrid {
+    display: grid;
+    grid-gap: 20px;
 }
 
 .lexGrid-col2 {
