@@ -10,9 +10,10 @@
             animateTime: 400
         }, options);
 
-        $(this).width(settings.shortWidth);
+        this.css('width', settings.shortWidth);
         $(this).text(settings.shortText);
 
+        // Add Hovering animation / event to $(this).
         $(this).hover(function() {
             $(this).animate({width : settings.longWidth}, settings.animateTime, function(){ $(this).text(settings.longText) });
         }, function() {

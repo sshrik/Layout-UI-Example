@@ -1,22 +1,19 @@
 #btn1 {
-    background-color: rgb(135, 255, 80);
     height: 20px;
 }
 
 #btn2 {
-    background-color: rgb(135, 255, 80);
     height: 20px;
 }
 
 #btn3 {
-    background-color: rgb(135, 255, 80);
     height: 20px;
 }
 
 #btn4 {
-    background-color: rgb(135, 255, 80);
     height: 20px;
 }
 .hbutton{
+    background-color: rgb(135, 255, 80);
     border: 1px solid black;
 }
