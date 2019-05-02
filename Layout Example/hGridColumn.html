@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>hGrid</title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="src/hGridColumn.js"></script>
+
+        <link rel="stylesheet" href="css/hGridColumn.css" type="text/css">
+        <link rel="stylesheet" href="css/grid.css" type="text/css">
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            // Below does not support animation.
+            $('#hGridBody1').hGridColumn();
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> hGrid </p>
+            </div>
+            <div class="lexGridBody hGridColumn" id="hGridBody1">
+                <div class="hgridItem" id='grid11'></div>
+                <div class="hgridItem" id='grid12'></div>
+                <div class="hgridItem" id='grid13'></div>
+                <div class="hgridItem" id='grid14'></div>
+            </div>
+        </div>
+    </body>
+</html>

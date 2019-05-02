@@ -1,0 +1,9 @@
+.hGridColumn {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.hgridItem {
+    border: 1px solid black;
+    background-color: rgb(126, 126, 126);
+}
