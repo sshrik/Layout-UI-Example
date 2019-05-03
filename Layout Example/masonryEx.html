@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title> masonryEx </title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- Load Masonry -->
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="src/masonryEx.js"></script>
+
+        <link rel="stylesheet" href="css/masonryEx.css" type="text/css">
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            $('.masonryGrid').masonry({
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: 100
+            });
+
+            $('.lexHeader').on('click', function() {
+                var items = [$('<div class="grid-item width-1 height-1"></div>'),
+                $('<div class="grid-item width-1 height-2"></div>'),
+                $('<div class="grid-item width-2 height-1"></div>'),
+                $('<div class="grid-item width-2 height-2"></div>') ]
+                
+                var item = items[Math.floor(Math.random() * 4)];
+                $('.masonryGrid').append(item).masonry('appended', item);
+            });
+
+            $(document).on('click', '.grid-item', function(){
+                $(this).css('background-color', 'orange');
+            });
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> masonryEx </p>
+            </div>
+            <div class="masonryBody masonryGrid">
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-2"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-2"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-1"></div>
+                <div class="grid-item width-2 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-2"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-2 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-1 height-1"></div>
+                <div class="grid-item width-1 height-2"></div>
+            </div>
+        </div>
+    </body>
+</html>

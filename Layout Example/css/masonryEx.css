@@ -1,0 +1,28 @@
+.masonryBody {
+    /* If grid is used for inner-body, this not be needed. */
+    /* lexBody`s values. */
+    width: calc(100% - 40px);
+    height: calc(80% - 40px);
+    margin: 20px;
+
+    /* For do not overlap margin size with header and body.*/
+    margin-top: 40px;
+}
+
+.grid-item {
+    width: 100px;
+    border: 1px solid black;
+    background-color: rgb(126, 126, 126);
+}
+.width-1 {
+    width: 100px;
+}
+.width-2 {
+    width: 200px;
+}
+.height-1 {
+    height: 100px;
+}
+.height-2 {
+    height: 200px;
+}
