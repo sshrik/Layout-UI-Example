@@ -1,0 +1,26 @@
+.dadItem{
+    border: 1px solid black;
+    background-color: rgb(126, 126, 126);
+    
+    margin: 20px;
+    height: 100px;
+    width: calc(50% - 40px);
+    
+    /* Text align. */
+    text-align: center;
+    line-height: 100px;
+    float: left;
+}
+
+/* opacity value need to value in 0.0 to 1.0 */
+.opacity_70{
+    opacity: 0.5
+}
+
+.opacity_50{
+    opacity: 0.5
+}
+
+.opacity_30{
+    opacity: 0.3
+}

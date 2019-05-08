@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>dad</title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="src/dad.js"></script>
+
+        <link rel="stylesheet" href="css/dad.css" type="text/css">
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            $("#dadContainer").dadBox();
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> dad </p>
+            </div>
+            <div class="lexBody" id="dadContainer">
+                <div class='dadItem'> 1 </div>
+                <div class='dadItem'> 2 </div>
+                <div class='dadItem'> 3 </div>
+                <div class='dadItem'> 4 </div>
+                <div class='dadItem'> 5 </div>
+                <div class='dadItem'> 6 </div>
+                <div class='dadItem'> 7 </div>
+                <div class='dadItem'> 8 </div>
+            </div>
+        </div>
+    </body>
+</html>
