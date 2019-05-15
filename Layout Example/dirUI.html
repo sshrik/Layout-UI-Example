@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>dirUI</title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="src/dirUI.js"></script>
+
+        <link rel="stylesheet" href="css/dirUI.css" type="text/css">
+        <link rel="stylesheet" href="css/grid.css" type="text/css">
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            $("#dirUIContainer").dadBox();
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> dirUI </p>
+            </div>
+            <div class="lexGridBody lexGrid lexGrid-col4" id="dirUIContainer">
+                <div class='addItem'></div>
+                <div class='dirItem'></div>
+                <div class='dirItem'></div>
+                <div class='dirItem'></div>
+                <div class='imageItem'></div>
+                <div class='imageItem'></div>
+                <div class='imageItem'></div>
+                <div class='imageItem'></div>
+                <div class='imageItem'></div>
+                <div class='imageItem'></div>
+            </div>
+        </div>
+    </body>
+</html>

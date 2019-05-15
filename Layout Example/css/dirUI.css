@@ -1,0 +1,11 @@
+.addItem {
+    background-image: url('public/add.png');
+}
+
+.dirItem {
+    background-image: url('public/directory.png');
+}
+
+.imageItem{
+    background-image: url('public/image.png');
+}
