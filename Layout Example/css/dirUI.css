@@ -1,11 +1,23 @@
+.dirUIContainer{
+    overflow: scroll;
+}
+
 .addItem {
-    background-image: url('public/add.png');
+    background-image: url('../public/add.png');
 }
 
 .dirItem {
-    background-image: url('public/directory.png');
+    background-image: url('../public/directory.png');
 }
 
 .imageItem{
-    background-image: url('public/image.png');
+    background-image: url('../public/image.png');
+}
+
+.item{
+    /* Need to set by js file. */
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }

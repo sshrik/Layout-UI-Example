@@ -13,25 +13,46 @@
     </head>
     <script>
         $(document).ready(function() {
-            $("#dirUIContainer").dadBox();
-        });
+            var dirList = ["a1", "a2", "a3", "a4", "b1", "b2", "b3"];
+            var imgList = ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8", "i11", "i12", "i13", "i14", "i15", "i16",];
+            var item = {"add": addItem};
+            $('#dirUIBox1').dirUI({
+                height: '200px',
+
+            });
     </script>
     <body>
         <div class="lexContainer">
             <div class="lexHeader">
                 <p class="lexHeaderContents"> dirUI </p>
             </div>
-            <div class="lexGridBody lexGrid lexGrid-col4" id="dirUIContainer">
-                <div class='addItem'></div>
-                <div class='dirItem'></div>
-                <div class='dirItem'></div>
-                <div class='dirItem'></div>
-                <div class='imageItem'></div>
-                <div class='imageItem'></div>
-                <div class='imageItem'></div>
-                <div class='imageItem'></div>
-                <div class='imageItem'></div>
-                <div class='imageItem'></div>
+            <div class="dirUIContainer lexGridBody lexGrid lexGrid-col6" id="dirUIBox1">
+                <div class='item addItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item dirItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
+                <div class='item imageItem'></div>
             </div>
         </div>
     </body>
