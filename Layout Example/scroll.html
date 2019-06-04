@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title> scrollEx </title>
+
+        <!-- crossorigin 은 서버와 다른 곳에서 소스를 가져올 때 사용된다. -->
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- Load manos. -->
+        <script src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" type="text/css" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png" type="image/png" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="css/scrollEx.css" type="text/css">
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            $("#mainContainer").mCustomScrollbar({
+                theme: "minimal"
+            });
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> scrollEx </p>
+            </div>
+            <div class="lexBody" id="mainContainer">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
+    </body>
+</html>
