@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title> lightBoxUI EX </title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+        <!-- Load Fancybox UI -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        
+        <!-- Load Colorbox. -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-colorbox@1.6.4/jquery.colorbox.min.js"></script>
+
+        <link rel="stylesheet" href="css/lightBoxEx.css" type="text/css">
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            $('#mainContainer').colorbox({href:"public/add.png"});
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> lightBoxUI EX </p>
+            </div>
+            <div class="lexBody" id="mainContainer">
+            </div>
+        </div>
+    </body>
+</html>
