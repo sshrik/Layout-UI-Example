@@ -76,7 +76,6 @@
 
 #footer {
     height: 100px;
-    border: 1px solid black;
 }
 
 .menu{
@@ -114,9 +113,7 @@
 
 .roomItem {
     background-color: rgb(126, 126, 126);
-    border: 1px solid black;
     min-height: 200px;
-    max-height: 200px;
 }
 
 .floatBtn {
@@ -137,7 +134,6 @@
 }
 
 .tempImage {
-    border: 1px solid black;
     background-image: url(public/image.png);
     background-size: contain;
     background-position: center;
