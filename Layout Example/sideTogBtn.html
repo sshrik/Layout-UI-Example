@@ -12,13 +12,27 @@
         <link rel="stylesheet" href="css/sideTogBtn.css" type="text/css">
         <link rel="stylesheet" href="layoutEx.css" type="text/css">
     </head>
+    <script>
+        $(document).ready(function() {
+            $(".sideTogDiv").sideTogBtn({
+                "shortWidth": 50, 
+                "longWidth": 400,
+                "animateTime": 400});
+        });
+    </script>
     <body>
         <div class="lexContainer">
             <div class="lexHeader">
                 <p class="lexHeaderContents"> Side Toggle Button </p>
             </div>
             <div class="lexBody">
-
+                <div class="sideTogDiv">
+                    <div class="btnSpace">
+                        <!-- Btn Space -->
+                        <div class="sideTogBtn"></div>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </body>
