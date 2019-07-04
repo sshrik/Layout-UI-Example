@@ -17,7 +17,9 @@
             $(".sideTogDiv").sideTogBtn({
                 "shortWidth": 50, 
                 "longWidth": 400,
-                "animateTime": 400});
+                "animateTime": 400,
+                "sideMenu": $('#mainBody')
+            });
         });
     </script>
     <body>
@@ -31,7 +33,10 @@
                         <!-- Btn Space -->
                         <div class="sideTogBtn"></div>
                     </div>
-                    
+                </div>
+                <div id="mainBody">
+                    <div id="mainNull"></div>
+                    <div id="mainContents"></div>
                 </div>
             </div>
         </div>
