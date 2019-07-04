@@ -5,25 +5,42 @@
 
         <!-- Load JQuery. -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        
-        <!-- Load manos. -->
-        <script src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" type="text/css" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png" type="image/png" crossorigin="anonymous"></script>
-                
-        <!-- Load Colorbox. -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-colorbox@1.6.4/jquery.colorbox.min.js"></script>
+
+        <!-- Load js. -->
+        <script src="main2.js"></script>
         
         <!-- Load files. -->
         <link rel="stylesheet" href="main2.css" type="text/css">
     </head>
     <script>
         $(document).ready(function() {
+            $("#toggleMenu").sideTogBtn({
+                "shortWidth": 50, 
+                "longWidth": 400,
+                "animateTime": 300,
+                "toggleBtn": $('#toggleBtn'),
+                "sideMenu": $('#contentsContainer'),
+                "displayClass" : $('.toggleDisplay')
+            });
         });
     </script>
     <body>
         <div id="mainContainer">
-            
+            <div class="tempLine" id="toggleMenu">
+                <div id="toggleBox btnSpace toggleDisplay">
+                    <div class="tempImage tempLine sideTogBtn toggleDisplay" id="toggleBtn"></div>
+                </div>
+                <div class="tempLine toggleDisplay" id="profileMenu"></div>
+                <div class="tempLine toggleDisplay" id="searchMenu"></div>
+                <div class="tempLine toggleDisplay" id="roomMenu"></div>
+                <div class="tempLine toggleDisplay" id="pictogramMenu"></div>
+            </div>
+            <div class="tempLine" id="contentsContainer">
+                <div class="tempLine" id="contentsBox"></div>
+                <div class="tempLine" id="footer">
+                    <p id="copyHere">ⓒHERE.</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

@@ -4,3 +4,85 @@
     /* 상자 내부의 외곽선 */
     box-sizing: border-box;
 }
+#mainContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+#toggleMenu {
+    /* For pictogram Menu */
+    position: relative;
+
+    width: 50px;
+    height: 100%;
+    float: left;
+    
+    background-color: rgb(179, 179, 179);
+}
+#toggleBox {
+    height: 30px;
+    width: 100%;
+}
+#toggleBtn {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+
+    float: right;
+    cursor: pointer;
+}
+
+/* TODO: 각 고정 크기 메뉴들은 화면의 크기에 따라 첫 크기를 조정해야함. */
+#profileMenu {
+    width: 100%;
+    height: 160px;
+    
+}
+#searchMenu{
+    width: 100%;
+    height: 80px;
+}
+#roomMenu {
+    width: 100%;
+    height: 640px;
+}
+#pictogramMenu {
+    /* Set menu put down. */
+    position: absolute;
+    bottom: 0px;
+    
+    width: 100%;
+    height: 20px;
+}
+.toggleDisplay {
+    display: none;
+}
+
+#contentsContainer {
+    width: calc(100% - 50px);
+    height: 100%;
+    float: left;
+}
+#contentsBox {
+    width: 100%;
+    height: 95%;
+}
+#footer {
+    width: 100%;
+    height: 5%;
+    background-color: rgb(126, 126, 126);
+}
+#copyHere{
+    float: right;
+}
+
+.tempImage {
+    background-image: url(public/image.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tempLine {
+    border: 1px solid black;
+}
