@@ -9,10 +9,6 @@
     height: 950px;
 }
 
-.z2 {
-    z-index: 2;
-}
-
 #topMenu {
     margin-left: 10px;
     margin-right: 10px;
@@ -49,6 +45,7 @@
     width: 200px;
     height: 20px;
 }
+
 #searchBlank > input {
     width: 200px;
     height: 20px;
@@ -154,6 +151,25 @@
     background-repeat: no-repeat;
 }
 
+#centerLog > h1 {
+    margin: 28px;
+    margin-left: 220px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800 bold;
+
+}
+
+.roomName {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.roomDesc .roomDate {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
 .backImage:before {
     content: "";
     position: fixed;
@@ -171,49 +187,34 @@
     -ms-filter: blur(2px);
     filter: blur(2px);
     
-    background-image: url(public/maps.jpg);
+    background-image: url(public/maps1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-  }
-
-.floatBtn:hover {
-    background-color: #631F16
-}
-
-#centerLog > h1 {
-    margin: 28px;
-    margin-left: 220px;
-    color: #631F16;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800 bold;
-}
-.roomItem > p {
-    color: #631F16;
-}
-
-.roomName {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-}
-
-.roomDesc .roomDate {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
 }
 
 .color_main1 {
-    background-color: #498EAF;
+    background-color: #324856;
 }
 
 .color_main2 {
-    background-color: #631F16;
+    background-color: #D66C44;
+}
+
+.color_main2C {
+    color: #324856;
 }
 
 .color_back1 {
-    background-color: #E5BB4B;
+    background-color: #4A746A;
 }
 
 .color_back2 {
-    background-color: #E4DACE;
+    background-color: #D18237;
 }
+/*
+    17 Set { #498EAF, #631F16, #E5BB4B, #E4DACE }
+    20 Set { #A6C2CE, #9C8F96, #EBC57C, #68799E }
+    24 Set { #E5EDF8, #E29E93, #EDBC7A, #0384BD }
+    30 Set { #324856, #4A746A, #D18237, #D66C44 }
+*/
