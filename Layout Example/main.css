@@ -6,10 +6,17 @@
 }
 #mainContainer{
     width: 100%;
-    height: 940px;
+    height: 950px;
+}
+
+.z2 {
+    z-index: 2;
 }
 
 #topMenu {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100% - 20px);
     height: 100px;
     border: 1px solid black;
 }
@@ -26,9 +33,12 @@
 #logo {
     width: 100px;
     height: 100px;
+
+    background-image: url(public/loc.svg);
 }
 
 #searcher {
+    margin-left: 20px;
     width: 240px;
     height: 100px;
 }
@@ -53,19 +63,31 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+    
+    background-image: url(public/search.svg);
+}
+
+#centerLog {
+    height: 100px;
 }
 
 #profileMenu{
     margin: 10px;
-    width: 80px;
-    height: 80px;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    
+    background-image: url(public/apps.svg);
 }
 
 #profile{
     margin: 10px;
-    margin-right: 50px;
-    width: 80px;
-    height: 80px;
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+
+    background-image: url(public/group.svg);
 }
 
 /* Contents Data */
@@ -101,8 +123,6 @@
     
     margin-left: 20px;
     margin-right: 20px;
-
-    background-color: rgb(214, 214, 214);
 }
 
 #roomMenu {
@@ -112,7 +132,6 @@
 }
 
 .roomItem {
-    background-color: rgb(126, 126, 126);
     min-height: 200px;
 }
 
@@ -126,16 +145,75 @@
     right: 100px;
     border-radius: 100%;
 
-    background-color: rgb(0, 153, 255);
+    background-image: url(public/add.svg);
 }
 
-.floatBtn:hover {
-    background-color: rgb(245, 255, 151);
-}
-
-.tempImage {
-    background-image: url(public/image.png);
+.centerImage {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.backImage:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    
+    background-image: url(public/maps.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.floatBtn:hover {
+    background-color: #631F16
+}
+
+#centerLog > h1 {
+    margin: 28px;
+    margin-left: 220px;
+    color: #631F16;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800 bold;
+}
+.roomItem > p {
+    color: #631F16;
+}
+
+.roomName {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.roomDesc .roomDate {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.color_main1 {
+    background-color: #498EAF;
+}
+
+.color_main2 {
+    background-color: #631F16;
+}
+
+.color_back1 {
+    background-color: #E5BB4B;
+}
+
+.color_back2 {
+    background-color: #E4DACE;
 }

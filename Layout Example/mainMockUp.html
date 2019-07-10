@@ -17,64 +17,151 @@
         <!-- Load files. -->
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="stylesheet" href="css/grid.css" type="text/css">
+
+        <!-- Web font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     </head>
     <script>
         $(document).ready(function() {
             $("#roomSpace").mCustomScrollbar({
-                theme: "minimal"
+                theme: "minimal"    
             });
         });
     </script>
-    <body id="mainContainer">
-        <div class="menu" id="topMenu">
-            <div class="topContents_left tempImage" id="logo"> </div>
-            <div class="topContents_left" id="searcher"> 
-                <div class="topContents_left" id="searchBlank"><input type="text"></div>
-                <div class="topContents_left tempImage" id="searchBtn"></div>
-            </div>
-            <!-- float: right make contents reverse. -->
-            <div class="topContents_right tempImage" id="profile"> </div>
-            <div class="topContents_right tempImage" id="profileMenu"> </div>
-        </div>
-        <div class="menu" id="contentsWrapper">
-            <div class="mainNull"></div>
-            <div id="roomSpace">  
-                <div class="lexGrid lexGrid-col4" id="roomMenu">
-                    <div class="roomItem">Room 1</div>
-                    <div class="roomItem">Room 2</div>
-                    <div class="roomItem">Room 3</div>
-                    <div class="roomItem">Room 4</div>
-
-                    <div class="roomItem">Room 5</div>
-                    <div class="roomItem">Room 6</div>
-                    <div class="roomItem">Room 7</div>
-                    <div class="roomItem">Room 8</div>    
-                    
-                    <div class="roomItem">Room 9</div>
-                    <div class="roomItem">Room 10</div>  
-                    <div class="roomItem">Room 11</div>
-                    <div class="roomItem">Room 12</div>   
-                    
-                    <div class="roomItem">Room 13</div>
-                    <div class="roomItem">Room 14</div>  
-                    <div class="roomItem">Room 15</div>
-                    <div class="roomItem">Room 16</div>      
-                    
-                    <div class="roomItem">Room 13</div>
-                    <div class="roomItem">Room 14</div>  
-                    <div class="roomItem">Room 15</div>
-                    <div class="roomItem">Room 16</div>     
-                    
-                    <div class="roomItem">Room 13</div>
-                    <div class="roomItem">Room 14</div>  
-                    <div class="roomItem">Room 15</div>
-                    <div class="roomItem">Room 16</div>     
+    <body>
+        <div class="backImage" id="mainContainer">
+            <div class="menu color_back2 centerImage" id="topMenu">
+                <div class="topContents_left color_main1 centerImage" id="logo"> </div>
+                <div class="topContents_left " id="searcher"> 
+                    <div class="topContents_left" id="searchBlank"><input type="text"></div>
+                    <div class="topContents_left centerImage" id="searchBtn"></div>
                 </div>
+                <div class="topContents_left" id="centerLog">
+                    <h1>Weclome to HERE</h1>
+                </div>
+                <!-- float: right make contents reverse. -->
+                <div class="topContents_right centerImage" id="profileMenu"> </div>
+                <div class="topContents_right centerImage" id="profile"> </div>
             </div>
-            <div class="mainNull"></div>
-            <div class="floatBtn tempImage"></div>
-        </div>
-        <div class="menu" id="footer">
+            <div class="menu" id="contentsWrapper">
+                <div class="mainNull"></div>
+                <div id="roomSpace">  
+                    <div class="lexGrid lexGrid-col4" id="roomMenu">
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+
+                        
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+
+                        
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+
+                        
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+
+                        
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                        <div class="roomItem color_back2">
+                            <p class="roomName">RoomName : Name1 ( 4 )</p>
+                            <p class="roomDesc">Destination : Mapogu GondukDong, GongDuk Villa, 401, Seoul </p>
+                            <p class="roomDate">MeetingDate : July, 22( Mon ) </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainNull"></div>
+                <div class="floatBtn color_main1 centerImage"></div>
+            </div>
+            <div class="menu" id="footer">
+            </div>
         </div>
     </body>
 </html>
