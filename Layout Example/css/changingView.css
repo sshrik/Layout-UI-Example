@@ -1,0 +1,36 @@
+.btnSpace {
+    width: 100%;
+    height: 200px;
+
+    border: 1px solid black;
+    background-color: rgb(126, 126, 126);
+}
+
+.btns{
+    float: left;
+
+    margin: 50px;
+    width: calc(33% - 100px);
+    height: 100px;
+
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(179, 179, 179);
+}
+
+.viewSpace {
+    margin-top : 20px;
+    width: 100%;
+    height: 500px;
+
+    border: 1px solid black;
+    background-color: rgb(179, 179, 179);
+}
+
+.viewNone {
+    display: none;
+}
+
+.viewBlock {
+    display: block;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title> Changing View </title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="src/changingView.js"></script>
+
+        <!-- Load files. -->
+        <link rel="stylesheet" href="layoutEx.css" type="text/css">
+        <link rel="stylesheet" href="css/changingView.css" type="text/css">
+    </head>
+    <script>
+        $(document).ready(function() {
+            $('.viewSpace').changingView({
+                btnList: ["btn1", "btn2", "btn3"],
+                idList: ["view1", "view2", "view3"]
+            });
+        });
+    </script>
+    <body>
+        <div class="lexContainer">
+            <div class="lexHeader">
+                <p class="lexHeaderContents"> Change View </p>
+            </div>
+            <div class="lexBody">
+                <div class="btnSpace">
+                    <button class="btns" id="btn1" type="button">Btn1</button>
+                    <button class="btns" id="btn2" type="button">Btn2</button>
+                    <button class="btns" id="btn3" type="button">Btn3</button>
+                </div>
+                <div class="viewSpace">
+                    <div id="view1" class="viewNone">
+                        <p>View 1 is now displaying... </p>
+                    </div>
+                    <div id="view2" class="viewNone">
+                        <p>View 2 is now displaying... </p>
+                    </div>
+                    <div id="view3" class="viewNone">
+                        <p>View 3 is now displaying... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
