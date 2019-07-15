@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 상자 내부의 외곽선 */
+    box-sizing: border-box;
+}
+
+#profileContainer {
+    width: 300px;
+    height: 450px;
+
+    border: 1px solid black;
+}
+
+#topNullSpace   {
+    width: 100%;
+    height: 52px;
+}
+
+#profileNameSpace   {
+    width: 100%;
+    height: 35px;
+}
+
+#profileMessage {
+    font-size: 16px;
+    /* text sort to center. line-height need to be same with height. */
+    line-height: 35px;
+    text-align: center;
+}
+
+#btnSpace   {
+    width: 100%;
+    height: 50px;
+}
+
+#btnContainer {
+    margin-top: 8px;
+    margin-bottom: 10px;
+
+    width: 100%;
+    height: calc(100% - 18px);
+}
+
+#profileBtn   {
+    margin-left: 30px;
+}
+
+#friendBtn   {
+    margin-left: 19px;
+}
+
+#settingBtn   {
+    margin-left: 19px;
+    margin-right: 30px;
+}
+
+.btn   {
+    width: 50px;
+    height: 40px;
+
+    font-size: 12px;
+    background-color: rgb(126, 126, 126);
+    float: left;
+}
+
+.btnLine {
+    margin-left: 19px;
+    height: 40px;
+    border: 0.5px solid black;
+    float: left;
+}
+#viewLine {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 250px;
+    border: 0.5px solid black;
+}
+#viewSpace   {
+    width: calc(100% - 30px);
+    height: 265px;;
+
+}
+.viewer {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.pwChange {
+    width: 165px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#passwordInput  {
+    width: 165px;
+    height: 80px;
+    margin-right: 8px;
+    float: left;
+}
+
+#passwordSubmit {
+    width: 65px;
+    height: 80px;
+    float: left;
+}
+
+#pwSend {
+    height: 70px;
+}
+
+#friendList {
+    width: 240px;
+    height: 250px;
+    background-color: rgb(179, 179, 179);
+}
+
+.viewNone {
+    display: none;
+}
+
+#footer   {
+    width: 100%;
+    height: 30px;
+}
+
+#footerMsg {
+    font-size: 9px;
+    /* text sort to center. line-height need to be same with height. */
+    line-height: 30px;
+    text-align: center;
+}

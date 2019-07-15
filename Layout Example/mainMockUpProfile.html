@@ -4,17 +4,89 @@
 
         <!-- Load JQuery. -->
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/changingView.css" type="text/css">
-
+        
+        <script src="src/mainProfile.js"></script>
+        
+        <!-- Load manos. -->
+        <script src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" type="text/css" crossorigin="anonymous"></script>
+                
         <!-- Load files. -->
-        <link rel="stylesheet" href="mainProfile.css" type="text/css">
-        <link rel="stylesheet" href="css/grid.css" type="text/css">
+        <link rel="stylesheet" href="css/mainProfile.css" type="text/css">
     </head>
     <script>
         $(document).ready(function() {
+            $('#viewSpace').changingView({
+                btnList: ["profileBtn", "friendBtn", "settingBtn"],
+                idList: ["profileView", "friendView", "settingView"]
+            });
+
+            $("#friendList").mCustomScrollbar({
+                theme: "minimal"    
+            });
         });
     </script>
     <body>
-        <div id="profileContainer"></div>
+        <div id="profileContainer">
+            <div id="topNullSpace"></div>
+            <div id="profileNameSpace">
+                <p id="profileMessage">Hello, Here!</p>
+            </div>
+            <div id="btnSpace">
+                <div id="btnContainer">
+                    <button class="btn" id="profileBtn" type="button"> Profile </button>
+                    <div class="btnLine"></div>
+                    <button class="btn" id="friendBtn" type="button"> Friend </button>
+                    <div class="btnLine"></div>
+                    <button class="btn" id="settingBtn" type="button"> Setting </button>
+                </div>
+            </div>
+            <div id="viewLine"></div>
+            <div id="viewSpace">
+                <div id="profileView" class="viewer">
+                    <div id="passwordInput">
+                        <input type="password" class="pwChange" id="pwVal" placeholder="input passwords" />
+                        <input type="password" class="pwChange" id="pwReVal" placeholder="retype passwords" />
+                    </div>
+                    <div id="passwordSubmit">
+                        <button type="button" id="pwSend"> Change PW </button>
+                    </div>
+                </div>
+                <div id="friendView" class="viewNone viewer">
+                    <div id="friendList">
+                        <p>frined id1</p>
+                        <p>frined id2</p>
+                        <p>frined id3</p>
+                        <p>frined id4</p>
+                        
+                        <p>frined id1</p>
+                        <p>frined id2</p>
+                        <p>frined id3</p>
+                        <p>frined id4</p>
+                        
+                        <p>frined id1</p>
+                        <p>frined id2</p>
+                        <p>frined id3</p>
+                        <p>frined id4</p>
+                        
+                        <p>frined id1</p>
+                        <p>frined id2</p>
+                        <p>frined id3</p>
+                        <p>frined id4</p>
+                        
+                        <p>frined id1</p>
+                        <p>frined id2</p>
+                        <p>frined id3</p>
+                        <p>frined id4</p>
+                    </div>
+                </div>
+                <div id="settingView" class="viewNone viewer">
+                    view for setting...
+                </div>
+            </div>
+            <div id="footer">
+                <p id="footerMsg">ⓒ HERE</p>
+            </div>
+        </div>
     </body>
 </html>
