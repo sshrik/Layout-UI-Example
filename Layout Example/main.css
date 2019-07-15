@@ -218,3 +218,9 @@
     24 Set { #E5EDF8, #E29E93, #EDBC7A, #0384BD }
     30 Set { #324856, #4A746A, #D18237, #D66C44 }
 */
+
+#profileColorBoxContainer {
+    width: 300px;
+    height: 600px;
+    background-color: #D66C44;
+}
