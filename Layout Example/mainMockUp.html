@@ -23,6 +23,7 @@
     </head>
     <script>
         $(document).ready(function() {
+            var focused = true;
             $("#roomSpace").mCustomScrollbar({
                 theme: "minimal"    
             });
@@ -30,6 +31,9 @@
                 $.colorbox({
                     href:"mainMockUpProfile.html"
                 });
+            });
+            $('#searchBtn').on('click', function()  {
+                $("#searchResult").toggleClass('viewNone');
             });
         });
     </script>
@@ -40,6 +44,20 @@
                 <div class="topContents_left " id="searcher"> 
                     <div class="topContents_left" id="searchBlank"><input type="text"></div>
                     <div class="topContents_left centerImage" id="searchBtn"></div>
+                    <div class="viewNone" id="searchResult">
+                        <div class="searchItem">
+                            <p class="searchId">id1</p>
+                            <button class="friendRequest"> Add </button>
+                        </div>
+                        <div class="searchItem">
+                            <p class="searchId">id3</p>
+                            <button class="friendRequest"> Add </button>
+                        </div>
+                        <div class="searchItem">
+                            <p class="searchId">id2</p>
+                            <button class="friendRequest"> Add </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="topContents_left" id="centerLog">
                     <h1 class="color_main2C">Weclome to HERE</h1>

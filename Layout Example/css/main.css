@@ -64,6 +64,43 @@
     background-image: url(../public/search.svg);
 }
 
+#searchResult{
+    position: absolute;
+    top: 100px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: #D18237;
+    z-index: 50;
+}
+
+.viewNone{
+    display: none;
+}
+
+.searchItem {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+
+    width: 180px;
+    height: 30px;
+    background-color: rgb(126, 126, 126);
+}
+.searchId {
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 10px;
+    float: left;
+}
+
+.friendRequest {
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 40px;
+    height: 20px;
+    float: right;
+}
+
 #centerLog {
     height: 100px;
 }
