@@ -30,7 +30,7 @@
     width: 100px;
     height: 100px;
 
-    background-image: url(public/loc.svg);
+    background-image: url(../public/loc.svg);
 }
 
 #searcher {
@@ -61,7 +61,7 @@
     height: 20px;
     cursor: pointer;
     
-    background-image: url(public/search.svg);
+    background-image: url(../public/search.svg);
 }
 
 #centerLog {
@@ -74,7 +74,7 @@
     width: 40px;
     height: 40px;
     
-    background-image: url(public/apps.svg);
+    background-image: url(../public/apps.svg);
 }
 
 #profile{
@@ -84,7 +84,7 @@
     width: 40px;
     height: 40px;
 
-    background-image: url(public/group.svg);
+    background-image: url(../public/group.svg);
 }
 
 /* Contents Data */
@@ -142,7 +142,7 @@
     right: 100px;
     border-radius: 100%;
 
-    background-image: url(public/add.svg);
+    background-image: url(../public/add.svg);
 }
 
 .centerImage {
@@ -187,7 +187,7 @@
     -ms-filter: blur(2px);
     filter: blur(2px);
     
-    background-image: url(public/maps1.jpg);
+    background-image: url(../public/maps1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
