@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>HERE : New concept for meeting culture</title>
+
+        <!-- Load JQuery. -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        
+        <!-- Load manos. -->
+        <script src="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" type="text/css" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png" type="image/png" crossorigin="anonymous"></script>
+                
+        <!-- Load Colorbox. -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery-colorbox@1.6.4/jquery.colorbox.min.js"></script>
+        
+        <!-- Load files. -->
+        <link rel="stylesheet" href="css/room.css" type="text/css">
+
+        <!-- Web font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+    <body>
+        <div id="mainContainer">
+            <div id="topMenu">  
+                <div id="homeLogo"></div> 
+                <div id="searchSpace">
+                    <div id="searchList"><input placeholder="input id" style="width:100%; height: 100%;"></div>
+                    <button id="searchLogo"></button>
+                </div>
+                <div id="nameSpace">
+                    <div></div>
+                    <p> Welcome HERE! </p>
+                </div>
+                <div id="settingMenu"></div>
+                <div id="socialMenu"></div>
+            </div>
+            <div class="line" id="mainLine" ></div>
+            <div id="mainContents">
+                <div id="mapSpace"></div>
+                <div id="idSpace">
+                    <div class="defaultBlock" id="roomName">
+                        <p>Room Name</p>
+                    </div>
+                    <div class="line" style="width:260px;"></div>
+                    <div id="idList">
+                        <div class="defaultBlock" id="idSearchBlock">
+                            <div class="circle addPerson"></div>
+                            <p id="idSearch"> Invite friends!</p>
+                        </div>
+                        <div class="defaultBlock">
+                            <div class="circle placePinBtn"></div>
+                            <p class="idValue"> ID 1 </p>
+                        </div>
+                        <div class="defaultBlock">
+                            <div class="circle placePinBtn"></div>
+                            <p class="idValue"> ID 2 </p>
+                        </div>
+                        <div class="defaultBlock">
+                            <div class="circle placePinBtn"></div>
+                            <p class="idValue"> ID 3 </p>
+                        </div>
+                    </div>
+                    <div class="line" style="width:260px;"></div>
+                    <div id="btnSpace">
+                        <button id="showStart">출발지 선택</button>
+                        <button id="showCand">후보지 선택</button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+</html>
