@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* 상자 내부의 외곽선 */
+    box-sizing: border-box;
+}
+
+#roomGenContainer {
+    width: 300px;
+    height: 450px;
+    background-color: #B1E2FD;
+}
+
+#makeRoomTopNullSpace{
+    height: 50px;
+}
+
+#makeRoomLogo {
+    margin-left: 40px;
+    margin-bottom: 17px;
+
+    width: 200px;
+    height: 35px;
+}
+
+#makeRoomLogo > p { 
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.line_250 {
+    margin-left: 25px;
+    width: 250px;
+
+    border: 0.7px solid #000000;
+}
+#idNullSpace {
+    width: 100%;
+    height: 20px;
+}
+
+#RoomName {
+    width: 200px;
+    height: 50px;
+}
+
+.transpInp {
+    margin-left: 25px;
+    font-size: 16px;
+    /* For transparent background input.*/
+    border: none;
+    background: transparent;
+}
+
+.idInp {
+    width: 130px;
+    height: 50px;
+}
+
+.defaultBtn {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 250px;
+    height: 50px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #D3EDFC;
+}.defaultBtn > input {
+    float: left;
+}
+
+#idListSpace {
+    width: 300px;
+    height: 180px;
+    overflow: auto;
+}
+
+.idBtn:last-child {
+    margin-bottom: 30px;
+}
+
+.idSearchBtn {
+    float: left;
+}
+
+.idSearchBtn > div {
+    background-image: url('../public/search.svg');
+}
+
+.idDelBtn {
+    float: right;
+    margin-right: 10px;
+}
+
+.idDelBtn > div{
+    background-image: url('../public/delPerson.svg');
+}
+
+.idAddBtn {
+    float: left;
+    margin-right: 10px;
+}
+
+.idAddBtn > div{
+    background-image: url('../public/addPerson.svg');
+}
+
+.circleBtn {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.circleBtn > div {
+    margin-left: 5px;
+    margin-top: 5px;
+
+    width: 20px;
+    height: 20px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.roomGenBtnSpace {
+    margin-left: 25px;
+    margin-top: 10px;    width: 250px;
+    height: 50px;
+}
+
+#navNext {
+    float: right;
+    margin-right: 10px;
+}
+
+#navNext > div {
+    background-image: url('../public/next.svg');
+}
+
+#mapInp {
+    width: 175px;
+    height: 50px;
+    float: left;
+}
+
+#findMap {
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 250px;
+    height: 160px;
+    background-color: blue;
+}
+
+#navBefore {
+    float: left;
+    margin-left: 10px;
+}
+
+#navBefore > div {
+    background-image: url('../public/before.svg');}
+
+    #roomEnd {
+        float: right;
+        margin-right: 10px;
+    }
+    
+    #roomEnd > div {
+        background-image: url('../public/add.svg');
+    }
+    
+    #rgFooter {
+        width: 100%;
+        height: 30px;
+    }
+    
+    #footerMsg {
+        font-size: 9px;
+        /* text sort to center. line-height need to be same with height. */
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .displayNone {
+        display: none;
+    }
