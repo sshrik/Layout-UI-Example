@@ -28,7 +28,6 @@
     text-align: center;
 }
 
-
 .line_250 {
     margin-left: 25px;
     width: 250px;
@@ -53,6 +52,19 @@
     background: transparent;
 }
 
+.friendBlock {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 180px;
+    height: 40px;
+}
+
+.friendBlock > p  {
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
 .idInp {
     width: 130px;
     height: 50px;
@@ -66,8 +78,16 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: #D3EDFC;
-}.defaultBtn > input {
+}
+
+.defaultBtn > * {
     float: left;
+}
+
+#friendListSpace{
+    width: 300px;
+    height: 180px;
+    overflow: auto;
 }
 
 #idListSpace {
@@ -78,6 +98,10 @@
 
 .idBtn:last-child {
     margin-bottom: 30px;
+}
+
+.idBtn:first-child {
+    margin-top: 30px;
 }
 
 .idSearchBtn {
@@ -133,7 +157,8 @@
 
 .roomGenBtnSpace {
     margin-left: 25px;
-    margin-top: 10px;    width: 250px;
+    margin-top: 10px;    
+    width: 250px;
     height: 50px;
 }
 
@@ -166,29 +191,30 @@
 }
 
 #navBefore > div {
-    background-image: url('../public/before.svg');}
+    background-image: url('../public/before.svg');
+}
 
-    #roomEnd {
-        float: right;
-        margin-right: 10px;
-    }
+#roomEnd {
+    float: right;
+    margin-right: 10px;
+}
     
-    #roomEnd > div {
-        background-image: url('../public/add.svg');
-    }
+#roomEnd > div {
+    background-image: url('../public/add.svg');
+}
     
-    #rgFooter {
-        width: 100%;
-        height: 30px;
-    }
-    
-    #footerMsg {
-        font-size: 9px;
-        /* text sort to center. line-height need to be same with height. */
-        line-height: 30px;
-        text-align: center;
-    }
-    
-    .displayNone {
-        display: none;
-    }
+#rgFooter {
+    width: 100%;
+    height: 30px;
+}
+
+#footerMsg {
+    font-size: 9px;
+    /* text sort to center. line-height need to be same with height. */
+    line-height: 30px;
+    text-align: center;
+}
+
+.displayNone {
+    display: none;
+}

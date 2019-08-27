@@ -16,8 +16,19 @@
     </head>
     <script>
         $(document).ready(function() {
+            $("#friendListSpace").mCustomScrollbar({
+                theme: "minimal"    
+            });
             $("#idListSpace").mCustomScrollbar({
                 theme: "minimal"    
+            });
+            $("#navNext").on("click", function() {
+                $("#findName").toggleClass('displayNone');
+                $("#setFinal").toggleClass('displayNone');
+            });
+            $("#navBefore").on("click", function() {
+                $("#findName").toggleClass('displayNone');
+                $("#setFinal").toggleClass('displayNone');
             });
         });
     </script>
@@ -29,35 +40,57 @@
             </div>
             <div class="line_250"></div>
             <div id="findName">
-            <div class="defaultBtn">
-                <input type="text" placeholder="방 이름을 입력하세요." class="transpInp" id="RoomName"/>
-            </div>
-            <div id="idNullSpace"></div>
-            <div id="idListSpace">
                 <div class="defaultBtn">
                     <input type="text" placeholder="ID를 입력하세요." class="transpInp idInp" id="idName"/>
                     <div class="idSearchBtn circleBtn"><div></div></div>
                     <div class="idAddBtn circleBtn"><div></div></div>
                 </div>
-                <div class="defaultBtn idBtn">
-                    <input type="text" placeholder="ID1" class="transpInp idInp"/>
-                    <div class="idDelBtn circleBtn"><div></div></div>
+                <div id="addedListSpace">
+
                 </div>
-                <div class="defaultBtn idBtn">
-                    <input type="text" placeholder="ID2" class="transpInp idInp"/>
-                    <div class="idDelBtn circleBtn"><div></div></div>
+                <div id="friendListSpace">
+                    <div class="defaultBtn idBtn">
+                        <div class="friendBlock"><p>ID1</p></div>
+                        <div class="idAddBtn circleBtn"><div></div></div>
+                    </div>
+                    <div class="defaultBtn idBtn">
+                        <div class="friendBlock"><p>ID2</p></div>
+                        <div class="idAddBtn circleBtn"><div></div></div>
+                    </div>
+                    <div class="defaultBtn idBtn">
+                        <div class="friendBlock"><p>ID3</p></div>
+                        <div class="idAddBtn circleBtn"><div></div></div>
+                    </div>
                 </div>
-                <div class="defaultBtn idBtn">
-                    <input type="text" placeholder="ID3" class="transpInp idInp"/>
-                    <div class="idDelBtn circleBtn"><div></div></div>
+                <div class="roomGenBtnSpace">
+                    <div class="circleBtn" id="navNext"><div></div></div>
                 </div>
             </div>
-            <div class="roomGenBtnSpace">
-                <div class="circleBtn" id="roomEnd"><div></div></div>
-            </div>
-            </div>
-            <div id="setFinal">
-                
+            <div id="setFinal" class="displayNone">
+                <div class="defaultBtn">
+                    <input type="text" placeholder="방 제목" class="transpInp" id="RoomName"/>
+                </div>
+                <div id="idNullSpace"></div>
+                <div id="idListSpace">
+                    <div class="defaultBtn idBtn">
+                        <input type="text" placeholder="ID1" class="transpInp idInp"/>
+                        <div class="idDelBtn circleBtn"><div></div></div>
+                    </div>
+                    <div class="defaultBtn idBtn">
+                        <input type="text" placeholder="ID2" class="transpInp idInp"/>
+                        <div class="idDelBtn circleBtn"><div></div></div>
+                    </div>
+                    <div class="defaultBtn idBtn">
+                        <input type="text" placeholder="ID3" class="transpInp idInp"/>
+                        <div class="idDelBtn circleBtn"><div></div></div>
+                    </div>
+                </div>
+                <div class="beforeBtn">
+                    <div class="circleBtn" id="navBefore"><div></div></div>
+                </div>
+                <div class="roomGenBtnSpace">
+                    <div class="circleBtn" id="roomEnd"><div></div></div>
+                </div>
             </div>
             <div id="rgFooter">
                 <p id="footerMsg">ⓒ HERE</p>
