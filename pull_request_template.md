@@ -2,8 +2,6 @@
 name: Pull Request Template
 about: Pull Request 에서 사용할 기본 Template
 title: "[#{ISSUE_NUM}] 해결한 내용"
-labels: ''
-assignees: ''
 
 ---
 
